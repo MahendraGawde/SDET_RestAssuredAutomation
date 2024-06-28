@@ -1,0 +1,8 @@
+Get single user : https://reqres.in/api/users/2
+Get List users: https://reqres.in/api/users?page=2
+
+Create User Post: https://reqres.in/api/users
+Body:             {
+                      "name": "morpheus",
+                      "job": "leader"
+                  }
