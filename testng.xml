@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test thread-count="5" name="Test">
+        <classes>
+            <class name="com.day6.CreateUser"/>
+            <class name="com.day6.GetUser"/>
+            <class name="com.day6.UpdateUser"/>
+            <class name="com.day6.DeleteUser"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
