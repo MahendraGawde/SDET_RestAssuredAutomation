@@ -1,8 +1,6 @@
 package com.day6;
 
 import com.github.javafaker.Faker;
-
-import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
@@ -18,6 +16,8 @@ public class CreateUser {
         userData.put("email",faker.internet().safeEmailAddress());
         userData.put("gender","Male");
         userData.put("status","inactive");
+
+
 
         System.out.println("---------->Create User<------------");
         String bearerToken = "434d24350e9bccfaae6a277e53f18ec46d2af77f8f64e76a14191b77f6c701ef";
