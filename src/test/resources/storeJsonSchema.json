@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Schema to Match Response",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "books": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        },
+        "required": ["category", "author", "title", "price"],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["name", "address", "books"],
+  "additionalProperties": false
+}
