@@ -13,9 +13,11 @@ public class JsonSchemaValidation {
     public void jsonSchemaValidationTest(){
        Response response = given().
                 when().get("http://localhost:3000/students");
-        response.then().log().all();
-                        response.then().assertThat()
-                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("studentsJsonSchema.json"));
+
+       response.then().log().all();
+       response.then().assertThat()
+                .body(JsonSchemaValidator
+                        .matchesJsonSchemaInClasspath("studentsJsonSchema.json"));
 
     }
 }
